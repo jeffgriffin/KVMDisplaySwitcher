@@ -1,0 +1,5 @@
+*.suo
+*/bin
+*.user
+*/obj
+packages/hidlibrary.3.2.31.0/
