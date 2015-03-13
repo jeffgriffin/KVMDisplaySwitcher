@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KVMDisplaySwitcher.Properties;
 
 namespace KVMDisplaySwitcher
 {
@@ -13,7 +14,7 @@ namespace KVMDisplaySwitcher
 
         public static void Start()
         {
-            _device = HidDevices.Enumerate(0x10D5, 0x55A2).FirstOrDefault(d => d.Description == "HID-compliant vendor-defined device");
+            _device = HidDevices.Enumerate(Settings.Default.WatchDeviceVID, Settings.Default.WatchDevicePID).FirstOrDefault();
 
             if (_device != null)
             {

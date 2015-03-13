@@ -10,7 +10,7 @@ namespace KVMDisplaySwitcher
 {
     class Program
     {
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
             MinimizeWorkingSet();
             Switcher.Start();

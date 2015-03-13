@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KVMDisplaySwitcher.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PowerOffDevices" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\.\DISPLAY1</Value>
+    </Setting>
+    <Setting Name="DeviceSettings" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\.\DISPLAY1,1920,1080|\\.\DISPLAY2,1440,900,1920,80</Value>
+    </Setting>
+    <Setting Name="WatchDevicePID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">21922</Value>
+    </Setting>
+    <Setting Name="WatchDeviceVID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4309</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
