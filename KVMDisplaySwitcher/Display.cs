@@ -220,6 +220,11 @@ namespace KVMDisplaySwitcher
             if (string.IsNullOrEmpty(Settings.Default.PowerOffDevices))
             {
                 PowerOffAll();
+                if(Settings.Default.PowerOffWait>0)
+                {
+                    Thread.Sleep(Settings.Default.PowerOffWait);
+                    PowerOnAll();
+                }
                 return;
             }
             foreach (var device in Settings.Default.PowerOffDevices.Split('|'))

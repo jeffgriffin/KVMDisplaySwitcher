@@ -14,5 +14,8 @@
     <Setting Name="WatchDeviceVID" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">4309</Value>
     </Setting>
+    <Setting Name="PowerOffWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -58,5 +58,14 @@ namespace KVMDisplaySwitcher.Properties {
                 return ((int)(this["WatchDeviceVID"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3000")]
+        public int PowerOffWait {
+            get {
+                return ((int)(this["PowerOffWait"]));
+            }
+        }
     }
 }
